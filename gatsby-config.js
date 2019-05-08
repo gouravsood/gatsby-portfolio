@@ -7,7 +7,7 @@ module.exports = {
     title: 'Camilo Holguin',
     subtitle: 'WordPress and JavaScript developer.',
     email: 'hello@camiloholguin.me',
-    copyright: 'Build with <a target="_blank" href="https://www.gatsbyjs.org/">GatsbyJS</a> and <a target="_blank" href="https://wordpress.org/">WordPress</a>. The code is open source and available at <a target="_blank" href="https://github.com/camiloholguin/gatsby-portfolio">Github</a>.',
+    copyright: 'Build with <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.org/">GatsbyJS</a> and <a target="_blank" rel="noopener noreferrer" href="https://wordpress.org/">WordPress</a>. The code is open source and available at <a target="_blank" rel="noopener noreferrer" href="https://github.com/camiloholguin/gatsby-portfolio">Github</a>.',
   },
   plugins: [
     'gatsby-plugin-styled-components',
