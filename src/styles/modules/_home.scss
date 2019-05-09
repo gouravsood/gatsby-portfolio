@@ -178,7 +178,13 @@
 
     img {
       box-shadow: 0 rem-calc(15) rem-calc(35) rgba(197, 197, 197, 0.5);
+      border-radius: rem-calc(10);
       margin-bottom: rem-calc(45);
+      object-fit: contain;
+
+      @include breakpoint(large) {
+        max-width: 490px;
+      }
     }
 
     .button {
