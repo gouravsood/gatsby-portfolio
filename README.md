@@ -1,11 +1,8 @@
-# [camiloholguin.me](https://camiloholguin.me)
-
-- Copyright (c) 2019 Camilo Holguin
-- All Rights Reserved
-
-![screenshot](screenshot.png 'screenshot')
+# Camilo Holguin
 
 Portfolio site using GatsbyJS and Wordpress REST API.
+
+![screenshot](screenshot.png 'screenshot')
 
 1. **Install dependencies.**
 
@@ -25,3 +22,6 @@ Portfolio site using GatsbyJS and Wordpress REST API.
    ```sh
    gatsby build
    ```
+
+- Copyright (c) 2019 Camilo Holguin
+- All Rights Reserved
