@@ -23,5 +23,7 @@ Portfolio site using GatsbyJS and Wordpress REST API.
    gatsby build
    ```
 
+---
+
 - Copyright (c) 2019 Camilo Holguin
 - All Rights Reserved
