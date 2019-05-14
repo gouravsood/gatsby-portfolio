@@ -2,7 +2,7 @@
 
 Portfolio site using GatsbyJS and Wordpress REST API.
 
-![screenshot](screenshot.png 'screenshot')
+[![screenshot](screenshot.png 'screenshot')](https://camiloholguin.me/)
 
 1. **Install dependencies.**
 
