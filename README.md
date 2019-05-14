@@ -1,4 +1,9 @@
-# Camilo Holguin
+# [camiloholguin.me](https://camiloholguin.me)
+
+- Copyright (c) 2019 Camilo Holguin
+- All Rights Reserved
+
+![screenshot](screenshot.png 'screenshot')
 
 Portfolio site using GatsbyJS and Wordpress REST API.
 
