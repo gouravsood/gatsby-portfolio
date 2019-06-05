@@ -9,6 +9,9 @@ import About from '../components/About';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
 
+// Screenshot
+import screenshot from '../../screenshot.png';
+
 const IndexTemplate = ({
   childWordPressAcfAbout: about,
   childWordPressAcfSkills: skills,
@@ -47,7 +50,13 @@ const Index = ({ data }) => {
 
   return (
     <Layout>
-      <Helmet title={`${name} | ${description}`} />
+      <Helmet>
+        <title>{`${name} | ${description}`}</title>
+        <meta property="og:image" content={screenshot} />
+        <meta property="og:image:type" content="image/png" />
+        <meta property="og:image:width" content="1280" />
+        <meta property="og:image:height" content="640" />
+      </Helmet>
       <IndexTemplate {...page} />
     </Layout>
   );
