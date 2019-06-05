@@ -52,10 +52,10 @@ const Index = ({ data }) => {
     <Layout>
       <Helmet>
         <title>{`${name} | ${description}`}</title>
+        <meta property="og:title" content={name} />
         <meta property="og:image" content={screenshot} />
         <meta property="og:image:type" content="image/png" />
-        <meta property="og:image:width" content="1280" />
-        <meta property="og:image:height" content="640" />
+        <meta property="og:description" content={description} />
       </Helmet>
       <IndexTemplate {...page} />
     </Layout>
