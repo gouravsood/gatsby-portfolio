@@ -51,7 +51,9 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <Helmet>
-        <title>{`${name} | ${description}`}</title>
+        <title>{name}</title>
+        <meta name="author" content={name} />
+        <meta name="description" content={description} />
         <meta property="og:title" content={name} />
         <meta property="og:image" content={screenshot} />
         <meta property="og:image:type" content="image/png" />
