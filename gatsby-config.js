@@ -5,13 +5,15 @@ require('dotenv').config({
 module.exports = {
   siteMetadata: {
     title: 'Camilo Holguin',
-    subtitle: 'WordPress and JavaScript developer.',
+    subtitle: 'Freelance front-end developer.',
     email: 'hello@camiloholguin.me',
     copyright: 'Build with <a target="_blank" rel="noopener noreferrer" href="https://www.gatsbyjs.org/">GatsbyJS</a> and <a target="_blank" rel="noopener noreferrer" href="https://wordpress.org/">WordPress</a>. The code is open source and available at <a target="_blank" rel="noopener noreferrer" href="https://github.com/camiloholguin/gatsby-portfolio">Github</a>.',
+    siteUrl: 'https://camiloholguin.me',
   },
   plugins: [
     'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
     {
       resolve: 'gatsby-plugin-sass',
     },
