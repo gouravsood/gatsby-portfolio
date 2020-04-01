@@ -12,7 +12,7 @@ import useMeasure from '../utils/useMeasure';
 function Skills({ title, subtitle, capabilities }) {
   const [bind, { width }] = useMeasure();
   const [items] = useState(capabilities);
-  const columnCount = useMediaQuery(['(max-width: 639px)', '(max-width: 1023px)'], [1, 2], 3);
+  const columnCount = useMediaQuery(['(max-width: 639px)', '(max-width: 1199px)'], [1, 2], 3);
 
   // Each column gets a height (start at 0)
   const heights = new Array(columnCount).fill(0);
@@ -67,7 +67,7 @@ function Skills({ title, subtitle, capabilities }) {
 
               // Styled
               const Item = styled.div(val => (
-                `@media (min-width: 1024px) {
+                `@media (min-width: 1200px) {
                   margin-top: ${val.options.margin}px;
                   transform: translateY(${val.options.translate}px) translate3d(${val.options.x}px,${val.options.y}px,0);
                 }`

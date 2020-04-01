@@ -7,7 +7,7 @@
   animation-name: fadeInOpacity;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
   opacity: 1;
   margin: auto;
 
@@ -25,7 +25,7 @@
     padding: rem-calc(15 15 80);
   }
 
-  @include breakpoint(large) {
+  @include breakpoint(xlarge) {
     padding: rem-calc(15 0 200);
   }
 
@@ -63,12 +63,12 @@
     padding: rem-calc(30 0 14);
 
     @include breakpoint(medium) {
-      box-shadow: 0 rem-calc(15) rem-calc(35) rgba(226, 232, 236, 0.5);
-      border-radius: rem-calc(5);
       padding: rem-calc(60 25 15);
     }
 
-    @include breakpoint(large) {
+    @include breakpoint(xlarge) {
+      box-shadow: 0 rem-calc(15) rem-calc(35) rgba(226, 232, 236, 0.5);
+      border-radius: rem-calc(5);
       padding: rem-calc(80 40 40);
       margin-bottom: rem-calc(20);
     }
@@ -104,16 +104,12 @@
 
 .skills {
   @include e('heading') {
-    @include breakpoint(large) {
+    @include breakpoint(xlarge) {
       padding-bottom: rem-calc(130);
     }
   }
 
   @include e('box') {
-    @include breakpoint(large) {
-      padding: rem-calc(60 40 40);
-    }
-
     @include breakpoint(xlarge) {
       padding: rem-calc(80 40 40);
     }
@@ -124,11 +120,11 @@
     height: 100%;
     position: relative;
 
-    @include breakpoint(medium down) {
+    @include breakpoint(large down) {
       height: 100% !important;
     }
 
-    @include breakpoint(medium only) {
+    @include breakpoint(medium large only) {
       display: flex;
       flex-flow: row wrap;
     }
@@ -137,11 +133,11 @@
   @include e('item') {
     will-change: transform, width, height, opacity;
 
-    @include breakpoint(medium only) {
+    @include breakpoint(medium large only) {
       flex: 0 0 auto;
     }
 
-    @include breakpoint(large) {
+    @include breakpoint(xlarge) {
       position: absolute;
       padding: rem-calc(8);
     }
@@ -190,7 +186,7 @@
       object-fit: contain;
 
       @include breakpoint(large) {
-        max-width: 440px;
+        max-width: 400px;
       }
 
       @include breakpoint(xlarge) {

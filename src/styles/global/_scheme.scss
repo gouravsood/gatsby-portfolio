@@ -2,8 +2,17 @@
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-color: #0f0f0f;
-    color: rgba(255, 255, 255, 0.7);
+    background-color: #191919;
+    color: #9e9e9e;
+  }
+
+  a {
+    color: $white;
+
+    &:hover {
+      color: $white;
+      text-decoration: underline;
+    }
   }
 
   h1,
@@ -16,18 +25,23 @@
   }
 
   .skills__box {
-    box-shadow: none;
-
     [class*='icon-'] {
-      color: $white;
+      color: #9e9e9e;
+
+      @include breakpoint(xlarge) {
+        color: #ededed;
+      }
     }
 
-    @include breakpoint(large) {
-      background: rgba(255, 255, 255, 0.05);
+    @include breakpoint(xlarge) {
+      background-color: #272727;
     }
   }
 
+  .skills__box,
   .projects__box {
+    box-shadow: none;
+
     img {
       box-shadow: none;
     }
@@ -40,17 +54,12 @@
   }
 
   .header__contact,
+  .projects__box,
   .footer__contact {
     .button {
-      color: $white;
-      background: $primary-color;
-      border: 1px $primary-color solid;
-    }
-  }
-
-  .projects__box {
-    .button {
-      color: $white;
+      color: $black;
+      background: $white;
+      border: 1px $white solid;
     }
   }
 }

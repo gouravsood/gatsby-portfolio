@@ -429,7 +429,8 @@ $grid-columns: 12;
 $grid-margin-gutters: (
   small: 0,
   medium: 40px,
-  large: 30px
+  large: 80px,
+  xlarge: 30px
 );
 $grid-padding-gutters: $grid-margin-gutters;
 $grid-container-padding: $grid-padding-gutters;
