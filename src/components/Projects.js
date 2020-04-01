@@ -36,7 +36,7 @@ function Projects({ title, subtitle, work }) {
                         <div className="cell medium-12 large-6">
                           <h3>{name}</h3>
                           <div className="projects__paragraph" dangerouslySetInnerHTML={{ __html: content }} />
-                          <a target="_blank" rel="noopener noreferrer" href={links} className="button hollow">
+                          <a target="_blank" rel="noopener noreferrer nofollow" href={links} className="button hollow">
                             Live Website
                           </a>
                         </div>
