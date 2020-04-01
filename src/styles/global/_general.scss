@@ -8,7 +8,7 @@ p {
   line-height: 1.8;
 
   @include breakpoint(large) {
-    font-size: rem-calc(20);
+    font-size: rem-calc(19);
     line-height: 1.9;
   }
 }
