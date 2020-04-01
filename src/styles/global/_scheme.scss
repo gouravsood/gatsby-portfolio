@@ -1,0 +1,56 @@
+/* Dark mode styles go here! */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0f0f0f;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $white;
+  }
+
+  .skills__box {
+    box-shadow: none;
+
+    [class*='icon-'] {
+      color: $white;
+    }
+
+    @include breakpoint(large) {
+      background: rgba(255, 255, 255, 0.05);
+    }
+  }
+
+  .projects__box {
+    img {
+      box-shadow: none;
+    }
+  }
+
+  .projects__content {
+    strong {
+      color: $white;
+    }
+  }
+
+  .header__contact,
+  .footer__contact {
+    .button {
+      color: $white;
+      background: $primary-color;
+      border: 1px $primary-color solid;
+    }
+  }
+
+  .projects__box {
+    .button {
+      color: $white;
+    }
+  }
+}

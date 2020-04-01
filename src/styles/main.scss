@@ -6,17 +6,17 @@
 /*
   BEM
 */
-@import "~sass-bem/bem";
+@import '~sass-bem/bem';
 
 /*
   Settings
 */
-@import "./global/settings";
+@import './global/settings';
 
 /*
   Fonts
 */
-@import "./global/fonts";
+@import './global/fonts';
 
 /*
   Global styles
@@ -36,11 +36,16 @@
 /*
   General
 */
-@import "./global/general";
+@import './global/general';
 
 /*
   Modules
 */
-@import "./modules/header";
-@import "./modules/home";
-@import "./modules/footer";
+@import './modules/header';
+@import './modules/home';
+@import './modules/footer';
+
+/*
+  Scheme
+*/
+@import './global/scheme';

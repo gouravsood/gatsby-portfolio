@@ -3,11 +3,17 @@
 */
 
 .layout {
-  opacity: 1;
+  width: 310px;
   animation-name: fadeInOpacity;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
-  animation-duration: 1s;
+  animation-duration: 2s;
+  opacity: 1;
+  margin: auto;
+
+  @include breakpoint(medium) {
+    width: 100%;
+  }
 }
 
 .about,
@@ -32,13 +38,9 @@
     }
 
     span {
-      font-size: rem-calc(18);
+      font-size: rem-calc(20);
       display: block;
       padding: rem-calc(6) 0;
-
-      @include breakpoint(medium) {
-        font-size: rem-calc(20);
-      }
 
       @include breakpoint(large) {
         font-size: rem-calc(24);
@@ -58,17 +60,17 @@
 .skills,
 .projects {
   @include e('box') {
-    padding: rem-calc(30 30 14);
-    border-radius: rem-calc(5);
-    box-shadow: 0 rem-calc(15) rem-calc(35) rgba(226, 232, 236, 0.5);
-    margin-bottom: rem-calc(20);
+    padding: rem-calc(30 0 14);
 
     @include breakpoint(medium) {
-      padding: rem-calc(60 40 15);
+      box-shadow: 0 rem-calc(15) rem-calc(35) rgba(226, 232, 236, 0.5);
+      border-radius: rem-calc(5);
+      padding: rem-calc(60 25 15);
     }
 
     @include breakpoint(large) {
       padding: rem-calc(80 40 40);
+      margin-bottom: rem-calc(20);
     }
 
     h3 {
@@ -92,6 +94,10 @@
       @include breakpoint(large) {
         font-size: rem-calc(68);
       }
+    }
+
+    p {
+      font-size: rem-calc(18);
     }
   }
 }
@@ -158,6 +164,7 @@
   }
 
   @include e('box') {
+    padding: rem-calc(30 0 14);
     box-shadow: none;
 
     @include breakpoint(large) {
@@ -183,6 +190,10 @@
       object-fit: contain;
 
       @include breakpoint(large) {
+        max-width: 440px;
+      }
+
+      @include breakpoint(xlarge) {
         max-width: 490px;
       }
     }
