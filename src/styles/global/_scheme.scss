@@ -1,10 +1,9 @@
 /* Dark mode styles go here! */
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #191919;
-    color: #9e9e9e;
-  }
+.dark-mode {
+  color: $dark-text;
+  background-color: $dark-body;
+  transition: all 0.5s ease;
 
   h1,
   h2,
@@ -25,11 +24,11 @@
     box-shadow: 0 rem-calc(15) rem-calc(35) rgba(0, 0, 0, 0.5);
 
     [class*='icon-'] {
-      color: #696969;
+      color: $dark-icons;
     }
 
     @include breakpoint(xlarge) {
-      background-color: #1f1f1f;
+      background-color: $dark-boxes;
     }
   }
 
@@ -52,9 +51,9 @@
   .projects__box,
   .footer__contact {
     .button {
-      color: #838383;
-      background: #343434;
-      border: 1px #343434 solid;
+      color: $white;
+      background: $dark-buttons;
+      border: 1px transparent solid;
 
       &:hover,
       &:focus,
@@ -62,6 +61,14 @@
         color: $black;
         background: $white;
         border: 1px $white solid;
+      }
+    }
+  }
+
+  .header__contact {
+    .mode {
+      svg {
+        stroke: $dark-text;
       }
     }
   }
@@ -77,24 +84,6 @@
       &:hover {
         color: $white;
         border-bottom: 1px solid $white;
-        padding-bottom: rem-calc(4px);
-      }
-    }
-  }
-}
-
-/* light mode styles go here! */
-
-@media (prefers-color-scheme: light) {
-  .footer__copyright,
-  .about__content {
-    a {
-      transition: all 0.25s ease-out;
-      border-bottom: 1px solid transparent;
-      padding-bottom: rem-calc(4px);
-
-      &:hover {
-        border-bottom: 1px solid $primary-color;
         padding-bottom: rem-calc(4px);
       }
     }

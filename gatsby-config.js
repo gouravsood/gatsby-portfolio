@@ -54,5 +54,13 @@ module.exports = {
         icon: 'src/icons/icon-196x196.png',
       },
     },
+    {
+      resolve: 'gatsby-plugin-react-svg',
+      options: {
+        rule: {
+          include: /icons/,
+        },
+      },
+    },
   ],
 };

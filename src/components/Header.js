@@ -1,8 +1,27 @@
-import React from 'react';
+/* eslint-disable react/button-has-type */
+import React, { useEffect } from 'react';
 import { StaticQuery, graphql } from 'gatsby';
 import PropTypes from 'prop-types';
 
+// Images
+import Moon from '../icons/moon.svg';
+import Sun from '../icons/sun.svg';
+
+// Utils
+import useDarkMode from '../utils/useDarkMode';
+
 export function HeaderTemplate({ email }) {
+  const [theme, toggleTheme] = useDarkMode();
+
+  useEffect(() => {
+    const defaultElement = window.document.body;
+    const classNameDark = 'dark-mode';
+    const classNameLight = 'light-mode';
+
+    defaultElement.classList.add(theme === 'light' ? classNameDark : classNameLight);
+    defaultElement.classList.remove(theme === 'light' ? classNameLight : classNameDark);
+  }, [theme]);
+
   return (
     <header className="header" role="banner">
       <div className="grid-container">
@@ -14,9 +33,14 @@ export function HeaderTemplate({ email }) {
           </div>
           <div className="cell small-6">
             <div className="header__contact">
-              <a href={`mailto:${email}`} className="button">
-                Contact
-              </a>
+              <div className="grid-x align-right align-middle">
+                <button onClick={() => toggleTheme(!theme)} className="mode">
+                  { (theme === 'light') ? <Sun /> : <Moon /> }
+                </button>
+                <a href={`mailto:${email}`} className="button">
+                  Contact
+                </a>
+              </div>
             </div>
           </div>
         </div>
