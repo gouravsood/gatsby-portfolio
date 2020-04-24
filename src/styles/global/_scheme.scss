@@ -3,7 +3,6 @@
 .dark-mode {
   color: $dark-text;
   background-color: $dark-body;
-  transition: all 0.5s ease;
 
   h1,
   h2,
@@ -88,4 +87,9 @@
       }
     }
   }
+}
+
+.dark-mode,
+.light-mode {
+  transition: all 0.5s ease;
 }
