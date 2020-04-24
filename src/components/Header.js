@@ -26,12 +26,12 @@ export function HeaderTemplate({ email }) {
     <header className="header" role="banner">
       <div className="grid-container">
         <div className="grid-x align-middle">
-          <div className="cell small-6">
+          <div className="cell small-4 large-6">
             <div className="header__branding">
               <span className="icon-logo" />
             </div>
           </div>
-          <div className="cell small-6">
+          <div className="cell small-8 large-6">
             <div className="header__contact">
               <div className="grid-x align-right align-middle">
                 <button onClick={() => toggleTheme(!theme)} className="mode">

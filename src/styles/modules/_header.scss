@@ -31,9 +31,21 @@
 
     .button {
       background: $primary-color;
-      background: -moz-linear-gradient(left, lighten($primary-color, 8%) 0%, $primary-color 100%);
-      background: -webkit-linear-gradient(left, lighten($primary-color, 8%) 0%, $primary-color 100%);
-      background: linear-gradient(to right, lighten($primary-color, 8%) 0%, $primary-color 100%);
+      background: -moz-linear-gradient(
+        left,
+        lighten($primary-color, 8%) 0%,
+        $primary-color 100%
+      );
+      background: -webkit-linear-gradient(
+        left,
+        lighten($primary-color, 8%) 0%,
+        $primary-color 100%
+      );
+      background: linear-gradient(
+        to right,
+        lighten($primary-color, 8%) 0%,
+        $primary-color 100%
+      );
       border: rem-calc(1) lighten($primary-color, 8%) solid;
       margin-bottom: 0;
     }
@@ -41,9 +53,13 @@
     .mode {
       width: rem-calc(25px);
       height: rem-calc(25px);
-      margin: 0 rem-calc(25px);
+      margin-right: rem-calc(15px);
       cursor: pointer;
       outline: none;
+
+      @include breakpoint(medium) {
+        margin-right: rem-calc(25px);
+      }
 
       svg {
         stroke: $dark-gray;
