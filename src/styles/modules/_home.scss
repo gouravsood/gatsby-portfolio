@@ -83,10 +83,11 @@
     [class*='icon-'] {
       font-size: rem-calc(48);
       color: $primary-color;
-      display: block;
+      display: none;
       margin-bottom: rem-calc(20);
 
       @include breakpoint(medium) {
+        display: block;
         margin-bottom: rem-calc(30);
       }
 
