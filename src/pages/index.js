@@ -58,6 +58,7 @@ const Index = ({ data }) => {
         <meta property="og:image" content={screenshot} />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:description" content={description} />
+        <html lang="en" />
       </Helmet>
       <IndexTemplate {...page} />
     </Layout>

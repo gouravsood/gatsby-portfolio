@@ -34,8 +34,16 @@ export function HeaderTemplate({ email }) {
           <div className="cell small-8 large-6">
             <div className="header__contact">
               <div className="grid-x align-right align-middle">
-                <button onClick={() => toggleTheme(!theme)} className="mode">
-                  { (theme === 'light') ? <Sun /> : <Moon /> }
+                <button
+                  onClick={() => toggleTheme(!theme)}
+                  aria-label={
+                    theme === 'light'
+                      ? 'Activate light mode'
+                      : 'Activate dark mode'
+                  }
+                  className="mode"
+                >
+                  {theme === 'light' ? <Sun /> : <Moon />}
                 </button>
                 <a href={`mailto:${email}`} className="button">
                   Contact
